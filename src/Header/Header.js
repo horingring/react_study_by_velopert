@@ -7,6 +7,7 @@ import HeaderSettingBox from './HeaderSettingBox';
 
 
 class Header extends Component {
+
     render(){
         return (
             <div className="headerMain">

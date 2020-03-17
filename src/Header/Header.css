@@ -87,17 +87,27 @@
 
 
 /* 설정박스 */
-#headerSettingBox{
+#headerSettingBoxBtn{
   margin-top: 0px;
   width: 15px;
   height: 45px;
 }
-#headerSettingBox img{
+#headerSettingBoxBtn img{
   width: 15px;
   height: 15px;
   margin-top: 15px;
 }
-
+#headerSettingBox{
+  background-color: white;
+  width: 250px;
+  border: 1px solid lightgray;
+  color : black;
+  font-weight: 300;
+  padding: 10px;
+}
+.headerSettingBoxMember{
+  margin-left: 30px;
+}
 
 
 /* 띄어쓰기 블럭 */
