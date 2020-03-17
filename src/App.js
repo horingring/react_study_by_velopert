@@ -1,13 +1,11 @@
 import React from 'react';
+import Header from './Header/Header';
 import './App.css';
-import MyName from './MyName';
-import Counter from './Counter'
 
 function App() {
   return (
     <div className="App">
-      <MyName />
-      <Counter></Counter>
+      <Header></Header>  
     </div>
   );
 }

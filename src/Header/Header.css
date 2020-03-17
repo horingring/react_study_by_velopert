@@ -1,0 +1,124 @@
+/* 헤더 공통 */
+.headerMain{
+  width: 100%;
+  height: 45px;
+  background-color: #4267b2;
+  vertical-align: middle;
+  border-bottom: 1.5px solid #355797;
+}
+.headerMember{
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  color: white;
+  font-weight: 700;
+  margin-top: 7.5px;
+}
+
+
+
+/* 헤더 로고 */
+#headerLogoBox{
+  width: 30px;
+  height: 30px;
+  line-height: 45px;
+  
+}
+#headerLogoBox img{
+  width: 30px;
+  height: 30px;
+  vertical-align: top;
+  border-radius: 10px;
+  border: 1px solid #4267b2;
+  margin-top: -1px;
+}
+
+
+
+/* 검색창 */
+#headerSearchBox{
+  width:350px;
+  background-color: white;
+  color : gray;
+  border-radius: 5px;
+}
+#headerSearchBar{
+  margin-left: 10px;
+  width: 310px;
+  height: 30px;
+  float: left;
+}
+#headerMagnifierIcon{
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 0px;
+}
+
+
+
+/* 퀵바 */
+.headerMemberVerticalPosition{
+  float: left;
+  padding: 0 5px;
+}
+#headerQuickBar{
+  width: 200px;
+}
+#headerMyPageFace{
+  float: left;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  margin-right: 5px;
+}
+#headerMyPageName{
+  float: left;
+  margin-left: 5px;
+}
+.headerDivisionBar{
+  float: left;
+  padding: 0 5px;
+  color: lightgray;
+  font-weight: 500;
+}
+
+
+
+/* 설정박스 */
+#headerSettingBox{
+  margin-top: 0px;
+  width: 15px;
+  height: 45px;
+}
+#headerSettingBox img{
+  width: 15px;
+  height: 15px;
+  margin-top: 15px;
+}
+
+
+
+/* 띄어쓰기 블럭 */
+.div100{
+  width: 100px;
+  height: 30px;
+  float: left;
+}
+.div200{
+  width : 200px;
+  height: 30px;
+  float: left;
+}
+.div300{
+  width : 300px;
+  height: 30px;
+  float: left;
+}
+.div400{
+  width : 400px;
+  height: 30px;
+  float: left;
+}
+
