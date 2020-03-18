@@ -1,5 +1,6 @@
 /* 헤더 공통 */
 .headerMain{
+  position: fixed;
   width: 100%;
   height: 45px;
   background-color: #4267b2;
@@ -28,7 +29,7 @@
   width: 30px;
   height: 30px;
   vertical-align: top;
-  border-radius: 10px;
+  border-radius: 8px;
   border: 1px solid #4267b2;
   margin-top: -1px;
 }
@@ -44,18 +45,22 @@
 }
 #headerSearchBar{
   margin-left: 10px;
-  width: 310px;
+  width: 309px;
   height: 30px;
   float: left;
+  border-right: 1px solid lightgray;
 }
 #headerMagnifierIcon{
+  opacity: 0.8;
   float: right;
   width: 30px;
   height: 30px;
   border-radius: 5px;
   margin-right: 0px;
 }
-
+#headerMagnifierIcon:hover{
+  opacity: 1.0;
+}
 
 
 /* 퀵바 */
@@ -65,6 +70,10 @@
 }
 #headerQuickBar{
   width: 200px;
+}
+#headerMyPage:hover, #headerHomeBtn:hover{
+  background-color: #3b5ca0;
+  border-radius: 5px;
 }
 #headerMyPageFace{
   float: left;
@@ -89,17 +98,26 @@
 /* 설정박스 */
 #headerSettingBoxBtn{
   margin-top: 0px;
-  width: 15px;
+  width: 45px;
   height: 45px;
+  float: right;
+}
+#headerSettingBoxBtn:hover{
+  cursor: pointer;
+  opacity: 0.5;
 }
 #headerSettingBoxBtn img{
   width: 15px;
   height: 15px;
   margin-top: 15px;
+  margin-left: 15px;
 }
 #headerSettingBox{
+  position: relative;
+  top: 55px;
+  left: 1140px;
   background-color: white;
-  width: 250px;
+  width: 230px;
   border: 1px solid lightgray;
   color : black;
   font-weight: 300;
@@ -110,7 +128,8 @@
 }
 
 
-/* 띄어쓰기 블럭 */
+
+/* 띄어쓰기 블럭_왼쪽 */
 .div100{
   width: 100px;
   height: 30px;
@@ -132,3 +151,31 @@
   float: left;
 }
 
+/* 띄어쓰기 블럭_오른쪽 */
+.div100_right{
+  width : 100px;
+  height: 30px;
+  float: right;
+}
+.div200_right{
+  width : 200px;
+  height: 30px;
+  float: right;
+}
+.div300_right{
+  width : 300px;
+  height: 30px;
+  float: right;
+}
+.div400_right{
+  width : 400px;
+  height: 30px;
+  float: right;
+}
+
+
+.testDivForScroll{
+  width: 300px;
+  height: 1000px;
+  background-color: red;
+}
