@@ -3,6 +3,7 @@ import FacebookBanner from './FacebookBanner';
 import LoginArea from './LoginArea';
 import LoginPageContent from './LoginPageContent';
 import JoinMemberArea from './JoinMemberArea';
+import JoinMemberComplete from './JoinMemberComplete';
 import './LoginPage.css';
 
 class LoginPage extends Component{
@@ -13,10 +14,6 @@ class LoginPage extends Component{
         };
     }
 
-
-        
-
-
     render(){
         var contentPage = null;
         if(this.state.contentMode === 'contentMode'){
@@ -25,14 +22,33 @@ class LoginPage extends Component{
             );
         }else if(this.state.contentMode === 'joinMemberMode'){
             contentPage = (
-                <JoinMemberArea></JoinMemberArea>
+                <JoinMemberArea
+                    onChangeContentMode={function(_contentMode){
+                        this.setState({
+                            contentMode : _contentMode
+                        });
+                    }.bind(this)}></JoinMemberArea>
+            );
+        }else if(this.state.contentMode === 'joinMemberCompleteMode'){
+            contentPage = (
+                <JoinMemberComplete 
+                    onChangeContentMode={function(_contentMode){
+                        this.setState({
+                            contentMode : _contentMode
+                        });
+                    }.bind(this)}></JoinMemberComplete>
             );
         }
         return(
             <div>
                 <FacebookBanner></FacebookBanner>
                 <div className="exceptBannerArea">
-                    <LoginArea></LoginArea>
+                    <LoginArea 
+                        onChangeContentMode={function(_contentMode){
+                            this.setState({
+                                contentMode : _contentMode
+                            });
+                        }.bind(this)}></LoginArea>
                     {contentPage}
                 </div>
             </div>

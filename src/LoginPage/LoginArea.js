@@ -29,10 +29,11 @@ class LoginArea extends Component{
                         </div>
                     </form>
                 </div>
-                <div className="joinMemberBtn"
-                //   onClick={function(){
-                //       this.props.onChangeContent('joinMember');
-                //   }.bind(this)}
+                <div 
+                  className="joinMemberBtn"
+                  onClick={function(){
+                      this.props.onChangeContentMode('joinMemberMode');
+                  }.bind(this)}
                   >회원가입</div>
             </div>
         );
