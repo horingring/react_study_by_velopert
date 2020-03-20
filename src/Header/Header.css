@@ -112,7 +112,7 @@
   margin-top: 15px;
   margin-left: 15px;
 }
-#headerSettingBox{
+.headerSettingBox{
   position: relative;
   top: 55px;
   left: 1140px;
@@ -121,12 +121,20 @@
   border: 1px solid lightgray;
   color : black;
   font-weight: 300;
-  padding: 10px;
+  padding: 10px 0;
+  border-radius: 5px;
 }
 .headerSettingBoxMember{
-  margin-left: 30px;
+  padding: 5px 0 5px 27px;
+  margin:0 2px;
 }
-
+.headerSettingBoxMember:hover{
+  color : white;
+  background-color: #4267b2;
+}
+.hrLine{
+  width: 210px;
+}
 
 
 /* 띄어쓰기 블럭_왼쪽 */

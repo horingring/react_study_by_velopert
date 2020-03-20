@@ -7,7 +7,7 @@ class HeaderSettingBox extends Component {
         let settingBox = null;
         if(this.props.mode === 'on'){
             settingBox = (
-                <div id="headerSettingBox">
+                <div className="headerSettingBox">
                     <div className="headerSettingBoxMember">내 그룹</div>
                     <hr className="hrLine"></hr>
                     <div className="headerSettingBoxMember">Facebook에서 광고하기</div>
@@ -16,7 +16,7 @@ class HeaderSettingBox extends Component {
                     <div className="headerSettingBoxMember">뉴스피드 기본설정</div>
                     <div className="headerSettingBoxMember">설정</div>
                     <hr className="hrLine"></hr>
-                    <div className="headerSettingBoxMember">로그아웃</div>
+                    <div className="headerSettingBoxMember" id="headerLogOutBtn">로그아웃</div>
                 </div>
             );
         }else if(this.props.mode === 'off'){

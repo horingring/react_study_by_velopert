@@ -1,0 +1,31 @@
+/* 공통 */
+.exceptBannerArea{
+    display: inline-block;
+}
+
+/* 페이스북 배너 */
+.facebookBanner{
+    position: fixed;
+    /* float: left; */
+    width: 550px;
+    height: 830px;
+}
+
+.bannerImgBlock{
+    width: 550px;
+    height: 310px;
+    background-color: white;
+}
+.facebookBanner img{
+    width:550px;
+    height: auto;
+}
+.bannerBlock{
+    width:550px;
+    height: 520px;
+    background: linear-gradient(to bottom, white, lightgray 10%, rgb(48, 48, 145) 70%, rgb(12, 12, 95));
+}
+
+
+
+
