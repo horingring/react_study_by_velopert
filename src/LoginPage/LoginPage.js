@@ -43,13 +43,18 @@ class LoginPage extends Component{
             <div>
                 <FacebookBanner></FacebookBanner>
                 <div className="exceptBannerArea">
-                    <LoginArea 
+                    <LoginArea
+                        onLogin={function(_loginInfo){
+                            this.props.onLogin(_loginInfo)
+                        }.bind(this)}
                         onChangeContentMode={function(_contentMode){
                             this.setState({
                                 contentMode : _contentMode
                             });
                         }.bind(this)}></LoginArea>
-                    {contentPage}
+                    <div className="contentBlock">    
+                        {contentPage}
+                    </div>
                 </div>
             </div>
         );

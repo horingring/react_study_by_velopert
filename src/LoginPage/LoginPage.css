@@ -1,31 +1,39 @@
-/* 공통 */
-.exceptBannerArea{
-    display: inline-block;
-}
-
 /* 페이스북 배너 */
 .facebookBanner{
-    position: fixed;
+    position: absolute;
+    left: 0;
     /* float: left; */
-    width: 550px;
-    height: 830px;
+    width: 30vw;
+    height: 100vh;
 }
 
 .bannerImgBlock{
-    width: 550px;
-    height: 310px;
+    width: 30vw;
+    height: 35vh;
     background-color: white;
 }
 .facebookBanner img{
-    width:550px;
-    height: auto;
+    width:30vw;
+    height: 35vh;
 }
 .bannerBlock{
-    width:550px;
-    height: 520px;
+    position: absolute;
+    left: 0;
+    top: 35vh;
+    width: 30vw;
+    height: 80vh;
     background: linear-gradient(to bottom, white, lightgray 10%, rgb(48, 48, 145) 70%, rgb(12, 12, 95));
 }
 
 
-
+/* 배너 예외블럭 */
+.exceptBannerArea{
+    position: absolute;
+    left: 30vw;
+    width: 70vw;
+    /* relative를 주었더니 body의 위치가 내려갔다. margin을 마이너스로 줄수도 없고.. 어떻게해야되나? */
+}
+.contentBlock{
+    padding: 13vh 0 0 5vw;
+}
 

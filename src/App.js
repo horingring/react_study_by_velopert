@@ -18,7 +18,12 @@ class App extends Component {
       );
     }else if(this.state.session === null){
       loginCompletePage = (
-        <LoginPage></LoginPage>
+        <LoginPage
+            onLogin={function(_loginInfo){
+                this.setState({
+                  session : _loginInfo
+                });
+            }.bind(this)}></LoginPage>
       );
     }
     return (

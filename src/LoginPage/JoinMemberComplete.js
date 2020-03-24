@@ -10,8 +10,7 @@ class JoinMemberComplete extends Component{
                 <button 
                   onClick={function(){
                       this.props.onChangeContentMode('contentMode');
-                  }.bind(this)}
-                  value="초기화면으로"></button>
+                  }.bind(this)}>초기화면으로</button>
             </div>
         );
     }
