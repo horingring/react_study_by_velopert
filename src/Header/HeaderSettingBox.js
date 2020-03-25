@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 import triangle from './HeaderImg/triangle.png'
 
 class HeaderSettingBox extends Component {
@@ -16,7 +16,12 @@ class HeaderSettingBox extends Component {
                     <div className="headerSettingBoxMember">뉴스피드 기본설정</div>
                     <div className="headerSettingBoxMember">설정</div>
                     <hr className="hrLine"></hr>
-                    <div className="headerSettingBoxMember" id="headerLogOutBtn">로그아웃</div>
+                    <div 
+                        className="headerSettingBoxMember" 
+                        id="headerLogOutBtn"
+                        onClick={function(){
+                            this.props.onLogin();
+                        }.bind(this)}>로그아웃</div>
                 </div>
             );
         }else if(this.props.mode === 'off'){
@@ -24,10 +29,9 @@ class HeaderSettingBox extends Component {
         }
 
         return (
-            <Fragment>
                 <div 
                 className="headerMember" 
-                id="headerSettingBoxBtn" 
+                id="headerSettingBoxBtn"
                 onClick={function(){
                     let _mode = null;
                     this.props.mode === 'on'
@@ -35,11 +39,11 @@ class HeaderSettingBox extends Component {
                         : _mode = 'on' 
                     this.props.onChangeMode(_mode);
                 }.bind(this)}>
-                    <img src={triangle} alt="셋팅박스 아이콘"></img>
-                    
-                </div>
-                {settingBox}
-            </Fragment>
+                    <div id="settingBoxImgBox">
+                        <img src={triangle} alt="셋팅박스 아이콘"></img>
+                    </div>
+                    {settingBox}
+                </div>    
         );
     }
 }

@@ -14,7 +14,12 @@ class App extends Component {
     let loginCompletePage = null;
     if(this.state.session !== null){
       loginCompletePage = (
-        <Header></Header>
+        <Header
+            onLogin={function(){
+              this.setState({
+                session : null
+              });
+            }.bind(this)}></Header>
       );
     }else if(this.state.session === null){
       loginCompletePage = (

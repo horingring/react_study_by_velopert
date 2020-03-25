@@ -18,20 +18,19 @@ class Header extends Component {
         return (
             <Fragment>
             <div className="headerMain">
-                <div className="div100"></div>
                 <HeaderLogo></HeaderLogo>
-                <div className="div100"></div>
                 <HeaderSearchBar></HeaderSearchBar>
-                <div className="div400"></div>
                 <HeaderQuickBar></HeaderQuickBar>
-                <div className="div300_right"></div>
-                <HeaderSettingBox 
+                < HeaderSettingBox
                     mode={this.state.mode}
                     onChangeMode={function(_mode){
                         this.setState({
                             mode : _mode
                         });
-                    }.bind(this)}> 
+                    }.bind(this)} 
+                    onLogin={function(){
+                        this.props.onLogin();
+                    }.bind(this)}>
                 </HeaderSettingBox>
             </div>
             <div className="testDivForScroll"></div>

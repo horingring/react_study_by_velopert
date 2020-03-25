@@ -1,8 +1,9 @@
 /* 헤더 공통 */
 .headerMain{
-  position: fixed;
-  width: 100%;
-  height: 45px;
+  position: absolute;
+  width: 100vw;
+  height: 6vh;
+  padding-top: 1vh;
   background-color: #4267b2;
   vertical-align: middle;
   border-bottom: 1.5px solid #355797;
@@ -13,9 +14,7 @@
   line-height: 30px;
   color: white;
   font-weight: 700;
-  margin-top: 7.5px;
 }
-
 
 
 /* 헤더 로고 */
@@ -23,7 +22,7 @@
   width: 30px;
   height: 30px;
   line-height: 45px;
-  
+  margin: 0 10px 0 10vw;
 }
 #headerLogoBox img{
   width: 30px;
@@ -66,10 +65,9 @@
 /* 퀵바 */
 .headerMemberVerticalPosition{
   float: left;
-  padding: 0 5px;
 }
 #headerQuickBar{
-  width: 200px;
+  margin: 0 10vw 0 30vw;
 }
 #headerMyPage:hover, #headerHomeBtn:hover{
   background-color: #3b5ca0;
@@ -97,27 +95,28 @@
 
 /* 설정박스 */
 #headerSettingBoxBtn{
-  margin-top: 0px;
   width: 45px;
   height: 45px;
-  float: right;
+  float: left;
 }
 #headerSettingBoxBtn:hover{
   cursor: pointer;
+}
+#settingBoxImgBox:hover{
   opacity: 0.5;
 }
-#headerSettingBoxBtn img{
+#headerSettingBoxBtn div img{
   width: 15px;
   height: 15px;
-  margin-top: 15px;
   margin-left: 15px;
 }
 .headerSettingBox{
   position: relative;
-  top: 55px;
-  left: 1140px;
+  top: 25px;
+  right: 180px;
   background-color: white;
   width: 230px;
+  height: auto;
   border: 1px solid lightgray;
   color : black;
   font-weight: 300;
@@ -145,11 +144,6 @@
 }
 .div200{
   width : 200px;
-  height: 30px;
-  float: left;
-}
-.div300{
-  width : 300px;
   height: 30px;
   float: left;
 }
