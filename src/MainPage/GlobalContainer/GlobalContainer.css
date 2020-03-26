@@ -1,0 +1,7 @@
+#globalContainer{
+    float: left;
+    width: 1012px !important;
+    height: 100%;
+    margin: 0 auto;
+    background-color: red;
+}

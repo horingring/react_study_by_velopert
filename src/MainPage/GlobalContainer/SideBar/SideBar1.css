@@ -1,0 +1,8 @@
+#SideBar1_MainBox{
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    height: 100%;
+    background-color: purple;
+    padding: 1% 1% 0 0;
+}

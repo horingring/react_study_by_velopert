@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import LoginPage from './LoginPage/LoginPage';
-import Header from './Header/Header';
+import MainPage from './MainPage/MainPage';
 import './App.css';
 
 class App extends Component {
@@ -14,12 +14,12 @@ class App extends Component {
     let loginCompletePage = null;
     if(this.state.session !== null){
       loginCompletePage = (
-        <Header
+        <MainPage
             onLogin={function(){
               this.setState({
                 session : null
               });
-            }.bind(this)}></Header>
+            }.bind(this)}></MainPage>
       );
     }else if(this.state.session === null){
       loginCompletePage = (

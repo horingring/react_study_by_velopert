@@ -47,30 +47,45 @@
     background-color: #4267b2;
     border-bottom: 2px solid #355797;
 }
-.joinMemberBtn{
-    float: left;
-    width: 80px;
-    height: 25px;
-    background-color: #3b5ca0;
-    border: 2px solid #355797;
-    color: white;
-    border-radius: 3px;
-    margin: 26px 0 0 2vw;
-    text-align: center;
-    line-height: 25px;
-}
 
-
-
+/* 로그인 폼 */
 input[type="text"], input[type="password"]{
     height:25px;
     padding-left: 2%;
 }
 input[type="submit"]{
     height: 30px;
-    background-color: #3b5ca0;
-    border: 2px solid #355797;
+    background-color: #4267b2;
+    border: 1.5px solid #29487d;
     border-radius: 3px;
     color: white;
     font-size: medium;
+}
+input[type="submit"]:hover{
+    background-color: #365899;
+    cursor: pointer;
+}
+input[type="submit"]:active{
+    background-color: #29487d;
+}
+
+/* 회원가입 버튼 */
+.joinMemberBtn{
+    float: left;
+    width: 80px;
+    height: 25px;
+    background-color: #4267b2;
+    border: 1.5px solid #29487d;
+    color: white;
+    border-radius: 3px;
+    margin: 26px 0 0 2vw;
+    text-align: center;
+    line-height: 25px;
+}
+.joinMemberBtn:hover{
+    background-color: #365899;
+    cursor: pointer;
+}
+.joinMemberBtn:active{
+    background-color: #29487d;
 }

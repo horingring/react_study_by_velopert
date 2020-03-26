@@ -1,4 +1,4 @@
-import React, {Component,Fragment} from 'react';
+import React, {Component} from 'react';
 import './Header.css';
 import HeaderLogo from './HeaderLogo';
 import HeaderSearchBar from './HeaderSearchBar';
@@ -16,7 +16,6 @@ class Header extends Component {
 
     render(){
         return (
-            <Fragment>
             <div className="headerMain">
                 <HeaderLogo></HeaderLogo>
                 <HeaderSearchBar></HeaderSearchBar>
@@ -33,8 +32,6 @@ class Header extends Component {
                     }.bind(this)}>
                 </HeaderSettingBox>
             </div>
-            <div className="testDivForScroll"></div>
-            </Fragment>
         );
     }
 }

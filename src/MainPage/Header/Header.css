@@ -107,7 +107,7 @@
 }
 #headerSettingBoxBtn div img{
   width: 15px;
-  height: 15px;
+  height: 10%;
   margin-left: 15px;
 }
 .headerSettingBox{
@@ -173,11 +173,4 @@
   width : 400px;
   height: 30px;
   float: right;
-}
-
-
-.testDivForScroll{
-  width: 300px;
-  height: 1000px;
-  background-color: red;
 }
