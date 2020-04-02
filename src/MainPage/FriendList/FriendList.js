@@ -1,13 +1,14 @@
 import React, {Component} from 'react';
+import './FriendList.css';
 
-class FriendsCategory extends Component{
+class FriendList extends Component{
     render(){
         return(
-            <div>
+            <div id="friendList">
                 
             </div>
         );
     }
 }
 
-export default FriendsCategory;
+export default FriendList;

@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import Header from './Header/Header';
 import GlobalContainer from './GlobalContainer/GlobalContainer';
-import FriendCategory from './FriendCategory/FriendCategory';
+import FriendList from './FriendList/FriendList';
 
 
 class MainPage extends Component{
@@ -14,7 +14,7 @@ class MainPage extends Component{
                     }.bind(this)}>
                 </Header>
                 <GlobalContainer></GlobalContainer>
-                <FriendCategory></FriendCategory>
+                <FriendList></FriendList>
             </Fragment>
         );
     }

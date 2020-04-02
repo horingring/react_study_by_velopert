@@ -1,15 +1,16 @@
 /* 헤더 공통 */
 .headerMain{
-  position: absolute;
-  width: 100vw;
-  height: 6vh;
-  padding-top: 1vh;
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  height: 43px;
+
   background-color: #4267b2;
   vertical-align: middle;
   border-bottom: 1.5px solid #355797;
 }
 .headerMember{
-  float: left;
+  display: inline-block;
   height: 30px;
   line-height: 30px;
   color: white;
@@ -19,43 +20,45 @@
 
 /* 헤더 로고 */
 #headerLogoBox{
-  width: 30px;
-  height: 30px;
-  line-height: 45px;
-  margin: 0 10px 0 10vw;
+  width: auto;
+  height: 70%;
+  margin: 0 1% 0 10%;
 }
 #headerLogoBox img{
-  width: 30px;
-  height: 30px;
-  vertical-align: top;
-  border-radius: 8px;
+  width: auto;
+  height: 100%;
+  border-radius: 15%;
   border: 1px solid #4267b2;
-  margin-top: -1px;
 }
 
 
 
 /* 검색창 */
 #headerSearchBox{
-  width:350px;
+  width: 25%;
+  height: 70%;
   background-color: white;
   color : gray;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 #headerSearchBar{
   margin-left: 10px;
-  width: 309px;
-  height: 30px;
+  width: calc(100%-height-1px);
+  height: 100%;
   float: left;
-  border-right: 1px solid lightgray;
+}
+#headerMagnifierBox{
+  height: 100%;
 }
 #headerMagnifierIcon{
   opacity: 0.8;
   float: right;
-  width: 30px;
-  height: 30px;
-  border-radius: 5px;
+  width: auto;
+  height: 100%;
   margin-right: 0px;
+  border-top-right-radius: 15%;
+  border-bottom-right-radius: 15%;
+  border-left: 1px solid lightgray;
 }
 #headerMagnifierIcon:hover{
   opacity: 1.0;
@@ -63,25 +66,30 @@
 
 
 /* 퀵바 */
-.headerMemberVerticalPosition{
+.quickBarMembmer{
   float: left;
+  height: 70%;
 }
 #headerQuickBar{
   margin: 0 10vw 0 30vw;
+  height: 100%;
 }
 #headerMyPage:hover, #headerHomeBtn:hover{
   background-color: #3b5ca0;
   border-radius: 5px;
 }
+#headerMyPageFaceBox{
+  height: 100%;
+  display: inline-block;
+}
 #headerMyPageFace{
-  float: left;
-  width: 30px;
-  height: 30px;
+  width: auto;
+  height: 100%;
   border-radius: 15px;
-  margin-right: 5px;
 }
 #headerMyPageName{
-  float: left;
+  display: inline-block;
+  height: 100%;
   margin-left: 5px;
 }
 .headerDivisionBar{
@@ -95,9 +103,9 @@
 
 /* 설정박스 */
 #headerSettingBoxBtn{
+  display: inline-block;
   width: 45px;
   height: 45px;
-  float: left;
 }
 #headerSettingBoxBtn:hover{
   cursor: pointer;

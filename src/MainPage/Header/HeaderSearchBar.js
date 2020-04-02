@@ -6,7 +6,7 @@ class HeaderSearchBar extends Component {
         return (
             <div className="headerMember" id="headerSearchBox">
                 <div id="headerSearchBar">검색창</div>
-                <div><img src={magnifier} alt="돋보기" id="headerMagnifierIcon"></img></div>
+                <div id="headerMagnifierBox"><img src={magnifier} alt="돋보기" id="headerMagnifierIcon"></img></div>
             </div>
         );
     }

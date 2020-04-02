@@ -1,0 +1,9 @@
+#friendList{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: greenyellow;
+    width: 10%;
+    height: 100%;
+    z-index: 2; /*임시*/
+}
